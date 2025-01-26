@@ -201,7 +201,7 @@ std::string CategorizeMessage(const std::string& message)
     if (message.find("error") != std::string::npos || message.find("failure") != std::string::npos)
         return "Errors";
     if (message.find("login") != std::string::npos || message.find("logout") != std::string::npos || message.find("sign") != std::string::npos ||
-        message.find("user") != std::string::npos)
+        message.find("user") != std::string::npos || message.find("User") != std::string::npos || message.find("Login") != std::string::npos)
         return "User Actions";
     return "General";
 }
